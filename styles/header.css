@@ -1,0 +1,45 @@
+header{
+    width: 100%;
+    height: auto;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 40px 95px;
+}
+
+.brand{
+    width: 50%;
+}
+
+.logo{
+    width: 180px;
+    height: 45px;
+}
+
+.logo-brand{
+    color: #0C9FF7;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.nav{
+    width: 50%;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+
+.nav-menu > li{
+    margin-left: 30px;
+    display: inline-block;
+}

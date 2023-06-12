@@ -1,13 +1,71 @@
+/*Geral*/
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans 3', sans-serif;
 }
 
-.container{
+body{
+    overflow-x: hidden;
+    min-height: 100%;
+}
+
+a, button, input[type="submit"], input[type="reset"]{/*Remover estilos, adicionar ponteiro*/
+    all: unset; 
+    cursor: pointer;
+}
+
+/*Textos*/
+h1{
+    color: #0C9FF7;
+    font-style: normal;
+    font-size: 64px;
+    font-weight: 850;
+}
+
+h2{
+    color: #F88F03;
+    font-style: normal;
+    font-size: 52px;
+    font-weight: 700;
+}
+
+p{  
+    color: #444444;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/*Componentes*/
+button, input[type="submit"], input[type="reset"]{
+    background-color: #0C9FF7;
+    border-radius: 18px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    padding: 12px 29px;
+    transition: 0.3s;
+}
+
+button:hover, input[type="submit"]:hover, input[type="reset"]:hover{background-color: #046EAB}
+
+a{
+    font-style: normal;
+    font-weight: 700;
+    color: #444444;
+    transition: 0.25s;
+}
+
+a:hover{color: #4AC5FF}
+
+/*Container do Conteúdo*/
+main{
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%;
     height: auto;
-    background-color: #052A4C;
+    padding: 0 90px;
 }
