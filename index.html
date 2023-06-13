@@ -16,20 +16,38 @@
 </head>
 <body>
     <header>
-        <div class="header-container">
+        <div class="headerContainer">
             <div class="brand">
-                <img src="images/header/logo.png" alt="EX IFSP Demandas - Logo" class="logo">
-                <span class="logo-brand">Demandas</span>
+                <a href="index.html">
+                    <img src="images/header/logo.png" alt="EXIFSP Demandas - Logo" class="logo">
+                    <span class="logoBrand">Demandas</span>
+                </a>
             </div>
             <nav class="nav">
-                <ul class="nav-menu">
+                <ul class="navMenu">
                     <li><a href="#">demandas</a></li>
                     <li><a href="#">instruções</a></li>
                     <li><a href="#">contatos</a></li>
                     <li><a href="#">sobre nós</a></li>
                 </ul>
+                <div class="hamburgerMenu" onclick="menuActive()">
+                    <label class="hamburgerIcon" id="hamburgerIcon">
+                        <span id="hambOpen">&#09776;</span>
+                        <span id="hambClose">&#10006;</span>
+                    </label>
+                </div>
             </nav>
         </div>
+        <ul class="hamburgerMenuItems" id="hamburgerMenuItems" style="opacity: 0;">
+            <li><a href="#">Demandas</a></li>
+            <li><a href="#">Instruções</a></li>
+            <li><a href="#">Contatos</a></li>
+            <li><a href="#">Sobre nós</a></li>
+        </ul>
     </header>
+    <main style="height: 1000px;">
+
+    </main>
+    <script src="scripts/hamburgerMenu.js"></script>
 </body>
 </html>

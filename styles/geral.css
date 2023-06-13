@@ -63,6 +63,11 @@ a:hover{color: #4AC5FF}
 
 /*Container do Conteúdo*/
 main{
+    width: 100%;
+    height: auto;
+    background-color: pink;
+}
+.container{
     display: flex;
     flex-direction: column;
     width: 100%;

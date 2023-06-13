@@ -3,34 +3,21 @@ header{
     height: auto;
 }
 
-.header-container{
+.headerContainer{
     display: flex;
     justify-content: space-between;
     max-width: 100%;
     padding: 40px 95px;
 }
 
-.brand{
-    width: 50%;
-}
-
-.logo{
-    width: 180px;
-    height: 45px;
-}
-
-.logo-brand{
+.logoBrand{
     color: #0C9FF7;
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
 }
 
-.nav{
-    width: 50%;
-}
-
-.nav-menu{
+.navMenu{
     display: flex;
     justify-content: end;
     align-items: end;
@@ -39,7 +26,141 @@ header{
     list-style: none;
 }
 
-.nav-menu > li{
+.navMenu > li{
     margin-left: 30px;
     display: inline-block;
 }
+
+.hamburgerMenu{
+    top: 35px;
+    right: 95px;
+    position: absolute;
+    z-index: -1;
+    color: #0C9FF7;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.hamburgerMenuItems{
+    width: 100%;
+    height: 100%;
+    border-top: 3px solid #F88F03;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.hamburgerMenuItems > li{
+    padding: 20px 0;
+    font-size: 20px;
+    border-bottom: 3px solid #EEEEEE;
+    background-color: #FFFFFF;
+}
+
+@media (min-width: 1008px){/*Desktop*/
+    .brand{
+        width: 50%;
+    }
+    
+    .logo{
+        width: 180px;
+        height: 45px;
+    }
+
+    .nav{
+        width: 50%;
+    }
+
+    .hamburgerMenuItems{
+        display: none;
+    }
+
+    .hamburgerMenu{
+        opacity: 0;
+    }
+}
+
+@media (max-width: 1007px){/*Mobile e Tablet*/
+    .brand{
+        width: 90%;
+    }
+
+    .nav{
+        width: 10%;
+    }
+
+    .navMenu{
+        display: none;
+    }
+
+    .hamburgerMenu{
+        opacity: 1;
+        z-index: 1;
+    }
+
+    #hambOpen{
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: scale(1);
+        transition: transform 0.3s;
+        opacity: 1;
+    }
+    
+    #hambClose{
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: 0.3s;
+        opacity: 0;
+        transform: scale(0);
+        transition: transform 0.3s;
+    }
+
+    .hamburgerMenuItems{
+        position: absolute;
+        z-index: -1;
+    }
+    
+    /*Funcionamento do Menu Hamburger*/
+    #hamburgerMenuItems.active{
+        opacity: 1 !important;
+        z-index: 1 !important;
+    }
+
+    #hambClose.active{
+        opacity: 1;
+        transform: scale(1);
+        transition: transform 0.2s;
+    }
+
+    #hambOpen.active{
+        opacity: 0;
+        transform: scale(0);
+        transition: transform 0.2s;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1007px){/*Tablet*/
+    .logo{
+        width: 145px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 640px){/*Mobile*/
+    .logo{
+        width: 110px;
+        height: 25px;
+    }
+
+    .logoBrand{
+        font-size: 18px;
+    }
+
+    .hamburgerMenu{
+        font-size: 30px;
+    }
+}
+
+
