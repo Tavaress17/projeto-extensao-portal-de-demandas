@@ -14,7 +14,6 @@ header{
     color: #0C9FF7;
     font-style: normal;
     font-weight: 700;
-    font-size: 22px;
 }
 
 .navMenu{
@@ -52,46 +51,37 @@ header{
 
 .hamburgerMenuItems > li{
     padding: 20px 0;
+    margin: 0;
     font-size: 20px;
     border-bottom: 3px solid #EEEEEE;
     background-color: #FFFFFF;
 }
 
 @media (min-width: 1008px){/*Desktop*/
-    .brand{
-        width: 50%;
-    }
+    .brand{width: 50%}
     
     .logo{
         width: 180px;
         height: 45px;
     }
 
-    .nav{
-        width: 50%;
-    }
+    .logoBrand{font-size: 22px}
+    
+    .nav{width: 50%}
 
     .hamburgerMenuItems{
         display: none;
     }
 
-    .hamburgerMenu{
-        opacity: 0;
-    }
+    .hamburgerMenu{opacity: 0}
 }
 
 @media (max-width: 1007px){/*Mobile e Tablet*/
-    .brand{
-        width: 90%;
-    }
+    .brand{width: 90%}
 
-    .nav{
-        width: 10%;
-    }
+    .nav{width: 10%}
 
-    .navMenu{
-        display: none;
-    }
+    .navMenu{display: none}
 
     .hamburgerMenu{
         opacity: 1;
@@ -149,18 +139,18 @@ header{
 }
 
 @media (max-width: 640px){/*Mobile*/
+    .headerContainer{
+        padding: 40px 30px;
+    }
+
     .logo{
         width: 110px;
         height: 25px;
     }
 
-    .logoBrand{
-        font-size: 18px;
-    }
+    .logoBrand{font-size: 18px}
 
-    .hamburgerMenu{
-        font-size: 30px;
-    }
+    .hamburgerMenu{font-size: 30px; right: 30px;}
 }
 
 

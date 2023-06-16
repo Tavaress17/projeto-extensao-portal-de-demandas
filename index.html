@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/geral.css">
     <link rel="stylesheet" href="styles/home_page.css">
     <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
     <header>
@@ -45,9 +46,104 @@
             <li><a href="#">Sobre nós</a></li>
         </ul>
     </header>
-    <main style="height: 1000px;">
-
+    <main>
+        <div class="container">
+            <div class="banner">
+                <div class="bannerInfo">
+                    <h1>Portal de Demandas</h1>
+                    <p>
+                        Está precisando de uma logo, um site ou até
+                        mesmo um sistema para o seu negócio?
+                    </p>
+                    <form id="bannerButton" action="pages/demandas.html">
+                        <input type="submit" value="Faça seu pedido!">
+                    </form>
+                </div>
+                <div class="bannerInstituto">
+                    <img class="institutoLogo" src="images/home_page/logoInstituto.png" alt="IFSP BRA Logo">
+                </div>
+            </div>
+            <div class="content">
+                <img class="ilustracaoPortal" src="images/home_page/ilustracaoPortal.png" alt="Ilustração de dúvidas sobre o Portal">
+                <div class="infoPortal">
+                    <h2>O que é o Portal de Demandas?</h2>
+                    <p>
+                        O <span style="color: #FFAD40">Portal de Demandas</span> foi feito para ONGs, 
+                        microempreendedores e empresas, enviarem suas 
+                        demandas para o nosso grupo de estudantes, 
+                        onde iremos desenvolver o seu site ou até 
+                        mesmo criar um sistema para o seu negócio.
+                    </p>
+                    <p>
+                        <span style="color: #0C9FF7">Totalmente gratuito</span>, em parceria com o 
+                        <span style="color: #379936">Instituto Federal Bragança Paulista</span>. 
+                    </p>
+            </div>
+        </div>
     </main>
+    <footer>
+        <div class="footerInfo">
+            <div class="footerLists">
+                <div class="footerNav">
+                    <h3>Navegar</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Demandas</a></li>
+                        <li><a href="#">Instruções</a></li>
+                        <li><a href="#">Contatos</a></li>
+                        <li><a href="#">Sobre nós</a></li>
+                    </ul>
+                </div>
+                <div class="footerContact">
+                    <h3><a href="pages/contato.html">Contato</a></h3>
+                    <ul>
+                        <li>projetoextensao@gmail.com</li>
+                        <li>(11) 91234-5678</li>
+                    </ul>
+                    <div class="footerSocialMedia">
+                        <h3>Redes Sociais</h3>
+                        <a id="instagramIcon" href="instagram.com">
+                            <svg 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            height="35px" 
+                            viewBox="0 0 448 512">
+                                <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 
+                                114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 
+                                189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 
+                                74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 
+                                26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 
+                                0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 
+                                36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 
+                                34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 
+                                11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 
+                                9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 
+                                132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                            </svg>
+                        </a>
+                        <a id="linkedinIcon" href="linkedin.com">
+                            <svg 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            height="35px" 
+                            viewBox="0 0 448 512">
+                                <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 
+                                480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 
+                                416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 
+                                102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 
+                                243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 
+                                30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <span>Site desenvolvido por Luan Tavares, Augusto e Leandro</span>
+        </div>
+        <div class="footerLocation">
+            <iframe class="footerMap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1837.0226726059166!2d-46.559780245462!3d-22.94855707292287!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cecb55ee153643%3A0xa53800f610a73b6f!2sIFSP%20C%C3%A2mpus%20Bragan%C3%A7a%20Paulista!5e0!3m2!1spt-BR!2sbr!4v1686950930349!5m2!1spt-BR!2sbr" width="800" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <span>Av. Maj. Fernando Valle, 2013 - São Miguel - Bragança Paulista</span>
+        </div>
+        <span>Site desenvolvido por Luan Tavares, Augusto e Leandro</span>
+    </footer>
     <script src="scripts/hamburgerMenu.js"></script>
 </body>
 </html>

@@ -1,11 +1,109 @@
-.banner{
-    width: 100%;
-    height: 500px;
+.banner{display: flex}
+
+.bannerInfo{
+    width: 50%;
 }
 
-.test{
-    margin: 100px;
+.bannerInstituto{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.institutoLogo{
+    width: 80%;
+    height: 50%;
+    aspect-ratio: 16/9;
+}
+
+#bannerButton{
+    margin-top: 11px;
+}
+
+.content{
+    display: flex;
     width: 100%;
-    height: 700px;
-    background-color: #FFFFFF;
+    background-color:#EEEEEE;
+    border-radius: 25px;
+    overflow: visible;
+    margin-top: 100px;
+}
+
+.ilustracaoPortal{
+    width: 30%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    top: -70px
+}
+
+.infoPortal{
+    width: 70%;
+    padding-left: 120px;
+    padding-right: 60px;
+}
+
+/*Telas Pequenas, Tablet e Mobile*/
+@media (max-width: 1330px) {
+    .banner{flex-direction: column;}
+
+    .bannerInfo{
+        text-align: center;
+        width: 100%;
+    }
+
+    .bannerInstituto{
+        padding-top: 40px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .institutoLogo{
+        width: 60%;
+        height: 20%;
+        aspect-ratio: 0;
+    }
+
+    .content{
+        flex-direction: column; 
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+
+    .ilustracaoPortal{
+        margin: 0 auto;
+        width: 30%;
+        position: relative;
+        z-index: 1;
+        top: -70px
+    }
+    
+    .infoPortal{
+        width: 100%;
+        text-align: center;
+        padding: 0 80px;
+    }
+}
+
+/*Mobile*/
+@media (max-width: 640px){
+    .institutoLogo{
+        width: 80%;
+        height: 70%;
+    }
+
+    .content{padding: 0}
+    
+    .infoPortal{
+        padding: 0 10px;
+    }
+
+    .ilustracaoPortal{
+        width: 70%;
+    }
+
+    .infoPortal{
+        position: relative;
+        top: -30px;
+    }
 }

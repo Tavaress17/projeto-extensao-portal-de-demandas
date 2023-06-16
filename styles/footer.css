@@ -1,0 +1,134 @@
+footer{
+    display: flex;
+    width: 100%;
+    margin-top: 70px;
+    background-color: #EEEEEE;
+    padding: 25px 85px;
+}
+
+h3{
+    margin: 10px 0;
+}
+
+a{
+    color: #000000; 
+    fill:#000000;
+}
+
+li{margin-top: 10px}
+
+li, li > a{font-weight: 600}
+
+.footerInfo{
+    width: 30%;
+}
+
+.footerLists{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+    width: 100%;
+}
+
+ul{list-style-type: none}
+
+#instagramIcon:hover{fill: #4AC5FF}
+
+#linkedinIcon:hover{fill: #4AC5FF}
+
+.footerInfo > span{
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 190px;
+}
+
+.footerLocation{
+    width: 70%;
+}
+
+.footerMap{
+    width: 100%;
+    border-radius: 35px;
+    border: 2px solid #AAAAAA;
+}
+
+.footerLocation > span{
+    display: table;
+    margin: 0 auto;
+}
+
+footer > span {
+    display: none;
+}
+
+/*Telas Pequenas*/
+@media (min-width: 1007px) and (max-width: 1330px) {
+    .footerInfo{width: 40%}
+
+    .footerLocation{width: 60%}
+
+    .footerLists{
+        flex-direction: column;
+    }
+
+    .footerInfo > span{
+        margin-top: 25px;
+    }
+}
+
+/*Tablet e Mobile*/
+@media (min-width: 641px) and (max-width: 1006px) {
+    footer{flex-direction: column}
+
+    .footerInfo{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footerLocation{width: 100%}
+
+    .footerInfo > span{
+        display: none;
+    }
+
+    footer > span{
+        display: table;
+        margin: 10px auto;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 640px){
+    footer{
+        flex-direction: column; 
+        padding: 0 20px
+    }
+
+    .footerLists{
+        flex-direction: column; 
+        text-align: center;
+        padding: 0;
+    }
+    
+    .footerInfo{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footerLocation{width: 100%}
+
+    .footerLocation > span{
+        text-align: center;
+    }
+
+    .footerInfo > span{
+        display: none;
+    }
+
+    footer > span{
+        display: table;
+        margin: 10px auto;
+        font-size: 12px;
+    }
+
+}

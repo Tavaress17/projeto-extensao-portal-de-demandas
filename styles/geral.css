@@ -41,12 +41,9 @@ p{
 /*Componentes*/
 button, input[type="submit"], input[type="reset"]{
     background-color: #0C9FF7;
-    border-radius: 18px;
     color: #FFFFFF;
     font-style: normal;
     font-weight: 600;
-    font-size: 30px;
-    padding: 12px 29px;
     transition: 0.3s;
 }
 
@@ -62,15 +59,57 @@ a{
 a:hover{color: #4AC5FF}
 
 /*Container do Conteúdo*/
-main{
-    width: 100%;
-    height: auto;
-    background-color: pink;
-}
+main{width: 100%}
+
 .container{
     display: flex;
     flex-direction: column;
     width: 100%;
     height: auto;
     padding: 0 90px;
+}
+
+/*Tamanhos para cada tipo de Tela*/
+@media (min-width: 1008px){/*Desktop*/
+    button, input[type="submit"], input[type="reset"]{
+        border-radius: 18px;
+        font-size: 30px;
+        padding: 12px 29px;
+    }
+
+    h1{font-size: 64px}
+
+    h2{font-size: 52px}
+
+    p{font-size: 30px}
+}
+
+@media (min-width: 641px) and (max-width: 1007px){/*Tablet*/
+    button, input[type="submit"], input[type="reset"]{
+        border-radius: 15px;
+        font-size: 25px;
+        padding: 8px 18px;
+    }
+    
+    h1{font-size: 52px}
+
+    h2{font-size: 45px}
+
+    p{font-size: 25px}
+}
+
+@media (max-width: 640px){/*Mobile*/
+    button, input[type="submit"], input[type="reset"]{
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+
+    h1{font-size: 35px}
+
+    h2{font-size: 28px}
+
+    p{font-size: 18px}
+
+    .container{padding: 0 30px;}
 }
