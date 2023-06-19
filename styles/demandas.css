@@ -1,0 +1,144 @@
+.banner{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+
+.leftBannerInfo{width: 25%}
+
+.bannerImage{
+    width: 35%; 
+    height: 70%;
+}
+
+.rightBannerInfo{width: 25%}
+
+#saibaMais{
+    color: #4AC5FF;
+}
+
+#saibaMais span{
+    position: relative;
+    top: 1px;
+    left: 2px;
+    transition: 0.2s;
+}
+
+#saibaMais:hover span{left: 8px}
+
+#formTitle{
+    text-align: center;
+    color: #4AC5FF;
+    font-style: normal;
+    font-size: 36px;
+    font-weight: 850;
+}
+
+.formEnvio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.formEnvio label{
+    margin-bottom: 20px;
+}
+
+.required{
+    color: #F88F03;
+    font-style: italic;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.formEnvio input{
+    margin-bottom: 40px;
+}
+
+.formInputsSection{
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+}
+
+.formDemanda{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+form textarea{
+    overflow-wrap: break-word; 
+    resize: none;
+}
+
+form input[type="submit"]{margin: 0 auto}
+
+#ajuda{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#ajuda a{
+    text-align: center;
+    color: #00CCCC;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#ajuda a:hover{
+    color: #4AC5FF;
+}
+
+@media (min-width: 1007px) and (max-width: 1200px) {/*Telas Pequenas*/
+    h2{text-align: center;}
+    
+    .banner{
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .leftBannerInfo{width: 100%}
+
+    .bannerImage{margin: 0 auto}
+
+    .rightBannerInfo{width: 100%}
+
+    .formInputsSection{width: 100%}
+}
+
+@media (max-width: 1006px){/*Tablet e Mobile*/
+    h2{text-align: center;}
+    
+    .banner{
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .leftBannerInfo{width: 100%}
+
+    .bannerImage{
+        margin: 5px auto;
+        width: 60%; 
+        height: 70%;
+    }
+
+    .rightBannerInfo{width: 100%}
+
+    .formInputsSection{width: 100%}
+}
+
+@media (min-width: 641px) and (max-width: 1007px){
+    #formTitle{font-size: 26px;}
+
+    .required{font-size: 22px;}
+}
+
+@media (max-width: 640px){/*Mobile*/
+    #formTitle{font-size: 18px;}
+
+    .required{font-size: 16px;}
+}

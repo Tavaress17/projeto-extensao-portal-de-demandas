@@ -20,22 +20,30 @@ a, button, input[type="submit"], input[type="reset"]{/*Remover estilos, adiciona
 h1{
     color: #0C9FF7;
     font-style: normal;
-    font-size: 64px;
     font-weight: 850;
 }
 
 h2{
     color: #F88F03;
     font-style: normal;
-    font-size: 52px;
     font-weight: 700;
 }
 
 p{  
     color: #444444;
     font-style: normal;
-    font-size: 30px;
     font-weight: 600;
+}
+
+label{  
+    color: #444444;
+    font-style: normal;
+    font-weight: 700;
+}
+
+input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::placeholder{  
+    color: #AAAAAA;
+    font-style: normal;
 }
 
 /*Componentes*/
@@ -57,6 +65,19 @@ a{
 }
 
 a:hover{color: #4AC5FF}
+
+input[type="text"], input[type="email"], textarea{
+    all:unset;
+    border-bottom: 5px solid #AB6200;
+    transition: 0.4s;
+    color: #444444;
+    font-style: normal;
+    font-weight: 600;
+}
+
+input[type="text"]:hover, input[type="email"]:hover, textarea:hover, input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
+    border-color: #0C9FF7;
+}
 
 /*Container do Conteúdo*/
 main{width: 100%}
@@ -81,7 +102,11 @@ main{width: 100%}
 
     h2{font-size: 52px}
 
-    p{font-size: 30px}
+    p, label{font-size: 30px}
+
+    input[type="text"], input[type="email"], textarea{font-size: 32px}
+
+    input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::placeholder{font-size: 24px}
 }
 
 @media (min-width: 641px) and (max-width: 1007px){/*Tablet*/
@@ -95,7 +120,13 @@ main{width: 100%}
 
     h2{font-size: 45px}
 
-    p{font-size: 25px}
+    p, label{font-size: 25px}
+
+    input[type="text"], input[type="email"], textarea{font-size: 27px}
+
+    input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::placeholder{font-size: 20px}
+
+    input[type="text"], input[type="email"], textarea{border-width: 3px}
 }
 
 @media (max-width: 640px){/*Mobile*/
@@ -109,7 +140,13 @@ main{width: 100%}
 
     h2{font-size: 28px}
 
-    p{font-size: 18px}
+    p, label{font-size: 18px}
+
+    input[type="text"], input[type="email"], textarea{font-size: 20px}
+
+    input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::placeholder{font-size: 16px}
+
+    input[type="text"], input[type="email"], textarea{border-width: 2px}
 
     .container{padding: 0 30px;}
 }
