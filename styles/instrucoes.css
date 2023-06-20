@@ -1,0 +1,15 @@
+.banner{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.leftBannerInfo{width: 25%}
+
+.bannerImage{
+    width: 500px; 
+    height: 350px;
+    background-color: #F88F03;
+}
+
+.rightBannerInfo{width: 25%}
