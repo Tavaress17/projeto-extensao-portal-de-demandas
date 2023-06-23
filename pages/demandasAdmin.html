@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX IFSP - Portal de Demandas</title>
+    <!--Fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="../styles/geral.css">
+    <link rel="stylesheet" href="../styles/demandas_admin.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+</head>
+<body>
+    <!--Header/Navbar-->
+    <header>
+        <div class="headerContainer">
+            <div class="brand">
+                <a href="../index.html">
+                    <img src="../images/header/logo.png" alt="EXIFSP Demandas - Logo" class="logo">
+                    <span class="logoBrand">Demandas</span>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="navMenu">
+                    <li><a href="demandas.html">demandas</a></li>
+                    <li><a href="instrucoes.html">instruções</a></li>
+                    <li><a href="contato.html">contato</a></li>
+                    <li><a href="sobre-nos.html">sobre nós</a></li>
+                </ul>
+                <div class="hamburgerMenu" onclick="menuActive()">
+                    <label class="hamburgerIcon" id="hamburgerIcon">
+                        <span id="hambOpen">&#09776;</span>
+                        <span id="hambClose">&#10006;</span>
+                    </label>
+                </div>
+            </nav>
+        </div>
+        <ul class="hamburgerMenuItems" id="hamburgerMenuItems" style="opacity: 0;">
+            <li><a href="demandas.html">Demandas</a></li>
+            <li><a href="instrucoes.html">Instruções</a></li>
+            <li><a href="contato.html">Contatos</a></li>
+            <li><a href="sobre-nos.html">Sobre nós</a></li>
+        </ul>
+    </header>
+    <!--Conteúdo do Site-->
+    <main>
+        <div class="container">
+            <h2 style="text-align: center;">Demandas recebidas</h2>
+            <div class="search">
+                <label class="searchLabel" for="demandaSearch">
+                    <input type="search" id="demandaSearch" name="demandaSearch">
+                    <svg class="searchIcon" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.98055 0.0277791C4.62346 0.0277791 0.265625 4.38911 0.265625 9.75048C0.265625 15.1119 4.62346 19.4732 9.98055 19.4732C11.6182 19.4732 13.2281 19.0843 14.5882 18.3342C14.6971 18.4654 14.8179 18.5863 14.949 18.6954L17.7247 21.4733C17.981 21.7619 18.2936 21.9951 18.6432 22.1584C18.9928 22.3218 19.372 22.4119 19.7577 22.4233C20.1433 22.4346 20.5272 22.367 20.8858 22.2245C21.2444 22.082 21.5701 21.8676 21.843 21.5946C22.1158 21.3216 22.33 20.9956 22.4723 20.6367C22.6147 20.2778 22.6823 19.8936 22.671 19.5077C22.6596 19.1217 22.5696 18.7421 22.4063 18.3923C22.2431 18.0424 22.0101 17.7296 21.7217 17.4731L18.946 14.6952C18.8108 14.5598 18.662 14.4388 18.5019 14.334C19.2514 12.9729 19.7232 11.3895 19.7232 9.7227C19.7232 4.36133 15.3654 0 10.0083 0L9.98055 0.0277791ZM9.98055 2.80569C13.8388 2.80569 16.9198 5.88918 16.9198 9.75048C16.9198 11.5839 16.2536 13.2784 15.0878 14.5285C15.0601 14.5563 15.0323 14.5841 15.0045 14.6118C14.8734 14.7209 14.7527 14.8418 14.6437 14.973C13.4224 16.0841 11.757 16.723 9.95279 16.723C6.09458 16.723 3.01356 13.6396 3.01356 9.77826C3.01356 5.91696 6.09458 2.83347 9.95279 2.83347L9.98055 2.80569Z" fill="#F88F03"/>
+                    </svg>
+                </label>
+            </div>
+            <div class="content">
+                <div class="table">
+                    <table class="tabelaDemandas">
+                        <thead>
+                            <tr>
+                                <th>ONG/Empresa</th>
+                                <th>Representante</th>
+                                <th>Data</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>STRING Enterprise</td>
+                                <td>Eduardo Mazzoni</td>
+                                <td>20/06/2023</td>
+                                <td><p class="status emProgresso">Em progresso</p></td>
+                            </tr>
+                            <tr>
+                                <td>EXIFSP Demandas</td>
+                                <td>Rafael Muniz</td>
+                                <td>12/04/2023</td>
+                                <td><p class="status completo">Completo</p></td>
+                            </tr>
+                            <tr>
+                                <td>IFSP BRA</td>
+                                <td>Flavio Amatte</td>
+                                <td>19/03/2023</td>
+                                <td><p class="status aberto">Aberto</p></td>
+                            </tr>
+                            <tr>
+                                <td>Microsoft</td>
+                                <td>Bill Gates</td>
+                                <td>23/01/2023</td>
+                                <td><p class="status cancelado">Cancelado</p></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--Footer-->
+    <footer>
+        <div class="footerInfo">
+            <div class="footerLists">
+                <div class="footerNav">
+                    <h3>Navegar</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="demandas.html">Demandas</a></li>
+                        <li><a href="instrucoes.html">Instruções</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="sobre-nos.html">Sobre nós</a></li>
+                    </ul>
+                </div>
+                <div class="footerContact">
+                    <h3><a href=contato.html">Contato</a></h3>
+                    <ul>
+                        <li>projetoextensao@gmail.com</li>
+                        <li>(11) 91234-5678</li>
+                    </ul>
+                    <div class="footerSocialMedia">
+                        <h3>Redes Sociais</h3>
+                        <a id="instagramIcon" href="instagram.com">
+                            <svg 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            height="35px" 
+                            viewBox="0 0 448 512">
+                                <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 
+                                114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 
+                                189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 
+                                74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 
+                                26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 
+                                0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 
+                                36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 
+                                34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 
+                                11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 
+                                9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 
+                                132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                            </svg>
+                        </a>
+                        <a id="linkedinIcon" href="linkedin.com">
+                            <svg 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            height="35px" 
+                            viewBox="0 0 448 512">
+                                <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 
+                                480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 
+                                416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 
+                                102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 
+                                243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 
+                                30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <span>Site desenvolvido por Luan Tavares, Augusto e Leandro</span>
+        </div>
+        <div class="footerLocation">
+            <iframe class="footerMap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1837.0226726059166!2d-46.559780245462!3d-22.94855707292287!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cecb55ee153643%3A0xa53800f610a73b6f!2sIFSP%20C%C3%A2mpus%20Bragan%C3%A7a%20Paulista!5e0!3m2!1spt-BR!2sbr!4v1686950930349!5m2!1spt-BR!2sbr" width="800" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <span>Av. Maj. Fernando Valle, 2013 - São Miguel - Bragança Paulista</span>
+        </div>
+        <span>Site desenvolvido por Luan Tavares, Augusto e Leandro</span>
+    </footer>
+    <!--Scripts-->
+    <script src="../scripts/hamburgerMenu.js"></script>
+</body>
+</html>

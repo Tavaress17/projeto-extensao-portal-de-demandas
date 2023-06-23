@@ -90,15 +90,16 @@ header{
 
     #hambOpen{
         position: absolute;
+        color: #0C9FF7;
         top: 0;
         right: 0;
-        transform: scale(1);
         transition: transform 0.3s;
         opacity: 1;
     }
     
     #hambClose{
         position: absolute;
+        color: #FF3333;
         top: 0;
         right: 0;
         transition: 0.3s;
@@ -120,7 +121,6 @@ header{
 
     #hambClose.active{
         opacity: 1;
-        transform: scale(1);
         transition: transform 0.2s;
     }
 
@@ -135,6 +135,14 @@ header{
     .logo{
         width: 145px;
         height: 35px;
+    }
+
+    #hambOpen{
+        transform: scale(1.5);
+    }
+    
+    #hambClose.active{  
+        transform: scale(1.5);
     }
 }
 
@@ -151,6 +159,14 @@ header{
     .logoBrand{font-size: 18px}
 
     .hamburgerMenu{font-size: 30px; right: 30px;}
+
+    #hambOpen{
+        transform: scale(1.6);
+    }
+    
+    #hambClose.active{
+        transform: scale(1.6);
+    }
 }
 
 

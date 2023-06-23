@@ -76,16 +76,29 @@ footer > span {
     }
 }
 
-/*Tablet e Mobile*/
+/*Tablet*/
 @media (min-width: 641px) and (max-width: 1006px) {
     footer{flex-direction: column}
+
+    footer h3{margin-bottom: 30px}
+
+    .footerContact > ul{margin-bottom: 30px}
+
+    .footerSocialMedia h3{margin-bottom: 0}
+
+    #instagramIcon{margin-right: 10px}
 
     .footerInfo{
         width: 100%;
         margin-bottom: 20px;
     }
 
-    .footerLocation{width: 100%}
+    .footerLocation{
+        margin-top: 20px;
+        width: 100%
+    }
+
+    .footerLocation > span{margin-top: 20px}
 
     .footerInfo > span{
         display: none;
@@ -93,16 +106,19 @@ footer > span {
 
     footer > span{
         display: table;
-        margin: 10px auto;
+        margin: 20px auto;
         font-size: 12px;
     }
 }
 
+/*Mobile*/
 @media (max-width: 640px){
     footer{
         flex-direction: column; 
         padding: 0 20px
     }
+
+    footer h3{margin-top: 40px;}
 
     .footerLists{
         flex-direction: column; 
@@ -115,9 +131,15 @@ footer > span {
         margin-bottom: 20px;
     }
 
-    .footerLocation{width: 100%}
+    #instagramIcon{margin-right: 10px;}
+
+    .footerLocation{
+        margin-top: 10px; 
+        width: 100%
+    }
 
     .footerLocation > span{
+        margin-top: 15px;
         text-align: center;
     }
 
@@ -127,8 +149,7 @@ footer > span {
 
     footer > span{
         display: table;
-        margin: 10px auto;
+        margin: 40px auto;
         font-size: 12px;
     }
-
 }
