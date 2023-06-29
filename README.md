@@ -8,5 +8,5 @@
 </p>
 
 <p align="center">
-    <img src="https://github.com/Tavaress17/projeto-extensao-portal-de-demandas/assets/84473713/4bfdb974-e054-4c8f-968b-2f68c63d27c6" alt="Logo Projeto Extensão - EX IFSP" width="330px">
+    <img src="images/header/logo.png" alt="Logo Projeto Extensão - EX IFSP" width="330px">
 </p>

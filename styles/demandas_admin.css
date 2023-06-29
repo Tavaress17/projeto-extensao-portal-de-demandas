@@ -216,6 +216,10 @@ tbody tr.hide td, tbody tr.hide td p{
 }
 
 @media (max-width: 1006px){
-    .status{ width: 100%;}
+    .status{width: 100%}
+}
+
+@media (max-width: 950px){
+    .search{width: 80%}
 }
 
